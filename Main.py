@@ -6,21 +6,37 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.graphics import Rectangle
 from kivy.uix.label import Label
 from kivy.clock import Clock
+from kivy.lang import Builder
+from kivy.config import Config
+
+
+Config.set("graphics", "width", "750")
+Config.set('graphics', 'height', '1334')
+
+
+class Labels(BoxLayout):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.dateNow = datetime.now()
+        self.dateEnd = datetime(2020, 4, 14)
+        self.difference = self.dateEnd - self.dateNow
+        print(self.difference)
 
 
 class NotBdayApp(App):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.dateNow = datetime.now()
-        self.dateEnd = datetime(2020, 4, 24)
+        self.dateEnd = datetime(2020, 4, 14)
         self.difference = self.dateEnd - self.dateNow
-        print(self.difference)
-        #self.dateNow = datetime.datetime.strftime()
+        #  print(self.difference.seconds)
+        #  print(self.difference.seconds, self.difference.seconds / 60, self.difference.seconds / 60 / 60)
+        #  self.dateNow = datetime.datetime.strftime()
 
     def build(self):
-        time = datetime.today()
+        #  time = datetime.today()
         #  Clock.schedule_interval(self.timer, 0.01)
-        self.labelTime = Label(text=str(self.difference))
+        self.labelTime = Label(font_size="30 sp", text=str(self.difference), color=(1, 1, 1, 1))
         Clock.schedule_once(self.set_background, 0)
         Clock.schedule_interval(self.timer, 0.01)
         return self.labelTime
@@ -41,20 +57,21 @@ class NotBdayApp(App):
     def timer(self, dt):
         self.dateNow = datetime.now()
         self.difference = self.dateEnd - self.dateNow
-        #resLine = f"{self.difference.days} дней. {self.difference.}"
-        #print(resLine)
+        #  resLine = f"{self.difference.days} дней. {self.difference.}"
+        #  print(resLine)
         self.labelTime.text = str(self.difference)
 
     def set_background(self, *args):
         self.root_window.bind(size=self.do_resize)
         with self.root_window.canvas.before:
-            self.bg = Rectangle(source="Kate_01.jpg", pos=(0, 0), size=(self.root_window.size))
+            self.bg = Rectangle(source="Kate_01.jpg", pos=(0, 0), size=self.root_window.size)
 
     def do_resize(self, *args):
         self.bg.size = self.root_window.size
 
     def on_press_btn(self, instance):
         print("Кнопка нажата")
+
 
 if __name__ == "__main__":
     NotBdayApp().run()
