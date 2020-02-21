@@ -1,0 +1,14 @@
+C:\Users\vnich\YandexDisk\NotBdayApp\NotBdayApp\NotBdayApp\bin\iPhone\Debug\NotBdayApp.exe
+C:\Users\vnich\YandexDisk\NotBdayApp\NotBdayApp\NotBdayApp\bin\iPhone\Debug\NotBdayApp.pdb
+C:\Users\vnich\YandexDisk\NotBdayApp\NotBdayApp\NotBdayApp\bin\iPhone\Debug\Xamarin.Essentials.dll
+C:\Users\vnich\YandexDisk\NotBdayApp\NotBdayApp\NotBdayApp\bin\iPhone\Debug\Xamarin.Essentials.pdb
+C:\Users\vnich\YandexDisk\NotBdayApp\NotBdayApp\NotBdayApp\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\vnich\YandexDisk\NotBdayApp\NotBdayApp\NotBdayApp\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\Users\vnich\YandexDisk\NotBdayApp\NotBdayApp\NotBdayApp\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\vnich\YandexDisk\NotBdayApp\NotBdayApp\NotBdayApp\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
+C:\Users\vnich\YandexDisk\NotBdayApp\NotBdayApp\NotBdayApp\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\vnich\YandexDisk\NotBdayApp\NotBdayApp\NotBdayApp\obj\iPhone\Debug\optimized\
+C:\Users\vnich\YandexDisk\NotBdayApp\NotBdayApp\NotBdayApp\obj\iPhone\Debug\NotBdayApp.csprojAssemblyReference.cache
+C:\Users\vnich\YandexDisk\NotBdayApp\NotBdayApp\NotBdayApp\obj\iPhone\Debug\NotBdayApp.csproj.CopyComplete
+C:\Users\vnich\YandexDisk\NotBdayApp\NotBdayApp\NotBdayApp\obj\iPhone\Debug\NotBdayApp.exe
+C:\Users\vnich\YandexDisk\NotBdayApp\NotBdayApp\NotBdayApp\obj\iPhone\Debug\NotBdayApp.pdb
